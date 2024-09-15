@@ -6,6 +6,11 @@
     <meta name="Author" content="Juan Tavares">
     <title>Meu currículo</title>
     <style>
+        main {
+            padding: 0;
+            margin: 10px;
+            height: 100vh;
+        }
         .container {
             padding: 0;
             margin: 0;
@@ -16,8 +21,14 @@
             align-items: stretch;
         }
         header {
-            width: 100vw;
-            
+            display: flex;
+            width: 95vw;
+            justify-content: center;
+            background-color: aqua;
+            border-color: dodgerblue;
+            border: solid;
+            padding: 0;
+            margin: 0;
         }
         .left, .right {
             display: flex;
@@ -25,11 +36,16 @@
             flex-direction: column;
             height: 50vh;
             justify-content: space-between;
+            align-items: center;
         }
-
+        .projects {
+            border: solid;
+            background-color: rgb(0, 247, 255);
+        }
         .profilePhoto {
             width: 200px;
             height: 200px;
+            border-radius: 50%;
         }
         .center {
             display: flex;
@@ -38,7 +54,7 @@
         }
         div.verticalLine {
             display: flex;
-            height: 300px;
+            height: 530px;
             background-color: black;
             margin: 0 10px;
             width: 1px;
@@ -53,6 +69,28 @@
         }
         li {
             flex: 1 1 30%;
+        }
+        .experiences {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .courses {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        footer div {
+            position: fixed;
+            bottom: 0;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            height: 50px;
+            width: 95vw;
+            background-color: black;
         }
         footer div.socialMedias img {
             width: 50px;
@@ -69,6 +107,11 @@
             <div class="left">
                 <img src="imagens/perfil.jpg" alt="Minha foto de perfil" class="profilePhoto">
                 <h1>Juan Tavares Marcolino Lirio</h1>
+                <p>
+                    Olá, tudo bem? Me chamo Juan e gosto muito de computadores e sistemas no geral, 
+                    sempre me interessei por como as coisas funcionavam então sempre me dedico a programação,
+                    desenvolvimento web, T.I. e tudo o que eu julgar interessante!
+                </p>
                 <h3>(27) 99692-6803</h3>
                 <h3>juan.lirio010@gmail.com</h3>
             </div>
@@ -104,8 +147,9 @@
                         <li>SEAG - Estagiário - Suporte de TI</li>
                         <li>HT TECNOLOGIA - Estagiário - Infraestrutura de TI</li>
                     </ul>
+                    <a href="/projetos.html" class="projects">Projetos</a>
                 </div>
-                <div>
+                <div class="courses">
                     <h2>Cursos:</h2>
                     <ul>
                         <li>FAESA - Faculdade presencial - Tecnólogo em Análise e Desenvolvimento de Sistemas</li>
