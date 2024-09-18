@@ -6,6 +6,9 @@
     <meta name="Author" content="Juan Tavares">
     <title>Meu currículo</title>
     <style>
+        body {
+            background-color: rgb(196, 245, 245);
+        }
         main {
             padding: 0;
             margin: 10px;
@@ -31,10 +34,12 @@
             margin: 0;
         }
         .left, .right {
+            border-color: black;
+            border: solid;
             display: flex;
             flex: 1;
             flex-direction: column;
-            height: 50vh;
+            height: 70vh;
             justify-content: space-between;
             align-items: center;
         }
@@ -54,11 +59,10 @@
         }
         div.verticalLine {
             display: flex;
-            height: 530px;
+            height: 640px;
             background-color: black;
             margin: 0 10px;
             width: 1px;
-            align-self: center;
         }
         div.center ul {
             display: flex;
