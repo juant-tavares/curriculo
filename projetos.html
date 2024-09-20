@@ -7,53 +7,148 @@
     <style>
         body {
             background-color: rgb(231, 231, 231);
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
         }
+
         header {
             display: flex;
-            align-items: center; /* Alinha verticalmente os itens */
-            justify-content: space-between; /* Espalha os itens ao longo do header */
+            align-items: center;
+            justify-content: space-between;
             width: 95vw;
             background-color: aqua;
-            border-color: dodgerblue;
-            border: solid;
-            padding: 0;
-            margin: 0;
+            border: 2px solid dodgerblue;
+            padding: 10px;
+            margin-bottom: 20px;
         }
-        img {
+
+        img.icone {
             height: 50px;
             border-radius: 50%;
-            margin-left: 10px; /* Adiciona uma margem esquerda */
+            margin-left: 10px;
         }
+
         .title {
-            flex-grow: 1; /* Permite que o título ocupe o espaço restante */
-            text-align: center; /* Centraliza o texto */
-            margin-right: 50px; /* Adiciona uma margem direita para centralizar visualmente */
+            flex-grow: 1;
+            text-align: center;
+            margin-right: 50px;
         }
+
         main {
-            height: 90vh;
+            height: auto;
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: flex-start;
+            padding: 20px 0;
         }
 
         .container {
-            background-color: chartreuse;
-            width: 50vw;
-            height: 50vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: white;
+            width: 70vw;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            margin-top: 20px;
         }
+
+        img.menor {
+            width: 50%;
+            margin-bottom: 20px;
+        }
+
+        img.maior {
+            width: 80%;
+            margin-bottom: 20px;
+        }
+
+        hr {
+            width: 100%;
+            border: none;
+            height: 1px;
+            background-color: #ccc;
+            margin: 30px 0;
+        }
+
+        h1, h2 {
+            margin-bottom: 10px;
+        }
+
+        p {
+            text-align: justify;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        footer {
+            margin-top: 50px;
+        }
+
 
     </style>
 </head>
 <body>
     <header>
-        <a href="index.html"><img src="imagens/home.png" alt="Página Principal"></a>
+        <a href="index.html"><img src="imagens/home.png" alt="Página Principal" class="icone"></a>
         <h1 class="title">Meus Projetos</h1>
     </header>
     <main>
         <div class="container">
-            <h1>Nome do projeto</h1>
-            <p>Breve descrição do projeto</p>
+            <h1>Projeto GeniuStudy</h1>
+            <p>Projeto voltado tanto para pessoas que querem aprender (alunos) quanto para pessoas que querem ensinar (professores).
+            Os professores podem criar suas aulas com matérias em que são bons em ensinar e receber por isso.
+            Os alunos podem escolher seus professores e matérias em uma lista e comparar os preços.
+            Os dados são salvos no arquivo de texto.</p>
+
+            <hr>
+
+            <h2>Login:</h2>
+            <img class="menor" src="imagens/projeto-login.png" alt="Tela de Login">
+            <p>Assim que o usuário se cadastra ou já possui login, ele loga em sua conta por aqui, indo direto para a tela designada
+                ao seu tipo de conta cadastrada. Se não possui login, ele clica em Registrar indo para a tela de cadastro.
+            </p>
+
+            <hr>
             
+            <h2>Cadastro:</h2>
+            <img class="menor" src="imagens/projeto-cadastro.png" alt="Tela de Cadastro">
+            <p>Caso o usuário não tenha login, aqui ele colocará seus dados e se cadastrará, além de já escolher o que ele quer ser,
+            entre aluno e professor, fazendo com que sua experiência dentro do app seja completamente diferente.
+            </p>
+
+            <hr>
+
+            <h2>Professor:</h2>
+            <img class="maior" src="imagens/projeto-professor.png" alt=" Tela do Professor">
+            <p>A tela do professor é composta por 3 botões e pela exibição de uma lista que é preenchida por ele ao clicar em adicionar,
+            exibindo assim a página de cração da disciplina, o botão de excluir necessita que seja selecionado alguma disciplina
+            existente, igual ao editar, a diferença é que o excluir apaga o registro por inteiro, o editar edita apenas a célula selecionada.
+            </p>
+
+            <hr>
+
+            <h2>Disciplina</h2>
+            <img class="menor" class="menor" src="imagens/projeto-criacao-disciplina.png" alt="Tela de Cadastro da Disciplina">
+            <p>Essa tela é exibida como uma aba flutuante e corresponde ao clique de criação da disciplina provido pelo professor, nela
+            pode ser escrito o nome da disciplina e o valor hora/aula, além de ser selecionado um horário disponível para a aula, de acordo
+            com o gosto do professor.
+            </p>
+
+            <hr>
+
+            <h2>Aluno</h2>
+            <img class="maior" src="imagens/projeto-aluno.png" alt="Tela do Aluno">
+            <p>Na tela do aluno é exibida uma grande área onde são dispostas todas as disciplinas criadas pelos professores que utilizam
+            o app, além disso, ela muda conforme o aluno usa o campo do filtro chamado Disciplina, onde mesmo não colocando o nome da
+            matéria por inteiro, apareceram todos os nomes de disciplinas com o que foi digitado.
+            </p>
+
+            
+
         </div>
     </main>
     <footer>
