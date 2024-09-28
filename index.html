@@ -8,10 +8,11 @@
     <style>
         body {
             background-color: rgb(196, 245, 245);
+            padding: 0;
+            margin: 0;
         }
         main {
             padding: 0;
-            margin: 10px;
             height: 100vh;
         }
         .container {
@@ -99,6 +100,30 @@
         footer div.socialMedias img {
             width: 50px;
             border-radius: 50%;
+        }
+        @media screen and (max-width: 400px) {
+            header {
+                width: 685px;
+            }
+            footer div {
+                width: 685px;
+            }
+            .left{
+                height: 130vh;
+            }
+            .right {
+                height: 148vh;
+            }
+            footer {
+                width: 90vw;
+            }
+            footer div {
+                height: 35px;
+                width: 100%;
+            }
+            footer div.socialMedias img {
+                width: 35px;
+            }
         }
     </style>
 </head>
